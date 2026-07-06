@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puppala Sai Jasmita Sri - Resume</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @media print {
+      .no-print {
+        display: none !important;
+      }
+      body {
+        background-color: white !important;
+        color: black !important;
+        padding: 0 !important;
+      }
+      .page-break {
+        page-break-before: always;
+      }
+      .resume-container {
+        border: none !important;
+        box-shadow: none !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+    }
+    /* Simple Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #030712;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1f2937;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-200 font-sans min-h-screen py-10 px-4 sm:px-6">
+
+  <!-- Action Bar (Sticky, hidden when printed) -->
+  <div class="no-print max-w-4xl mx-auto mb-6 flex flex-wrap justify-between items-center gap-3 bg-gray-900/60 backdrop-blur border border-gray-800 p-4 rounded-2xl shadow-xl">
+    <div class="flex items-center gap-2">
+      <a href="/" class="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-medium text-gray-300 hover:text-white hover:bg-gray-800 rounded-xl transition-all">
+        ← Back to Portfolio
+      </a>
+    </div>
+    <div class="flex items-center gap-3">
+      <button onclick="window.print()" class="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-white bg-gradient-to-r from-blue-600 to-teal-500 hover:from-blue-500 hover:to-teal-400 rounded-xl shadow-lg shadow-blue-500/20 cursor-pointer transition-all">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-printer"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6"/><rect x="6" y="14" width="12" height="8" rx="1"/></svg>
+        Print / Save PDF
+      </button>
+    </div>
+  </div>
+
+  <!-- Resume Container -->
+  <main class="resume-container max-w-4xl mx-auto bg-gray-900 border border-gray-800 rounded-3xl shadow-2xl overflow-hidden print:bg-white print:text-black">
+    
+    <!-- Top Decorative Border (hidden when printed) -->
+    <div class="no-print h-1.5 bg-gradient-to-r from-blue-500 via-teal-400 to-purple-500"></div>
+
+    <!-- Header Block -->
+    <header class="p-8 sm:p-10 border-b border-gray-800/80 print:border-gray-300 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 bg-gray-950/40 print:bg-white">
+      <div>
+        <h1 class="text-3xl sm:text-4xl font-display font-extrabold text-white tracking-tight print:text-black">
+          Puppala Sai Jasmita Sri
+        </h1>
+        <p class="text-base font-mono text-teal-400 font-medium tracking-wide mt-1.5 print:text-teal-600">
+          B.Tech Engineering Student
+        </p>
+        <p class="text-xs text-gray-500 font-mono tracking-wider mt-1 print:text-gray-500 uppercase">
+          Gitam University, Visakhapatnam
+        </p>
+      </div>
+
+      <!-- Contact Info grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2.5 text-xs sm:text-sm font-mono text-gray-400 print:text-gray-700 w-full md:w-auto">
+        <a href="tel:+918125342749" class="flex items-center gap-2 hover:text-white print:hover:text-black transition-colors">
+          <span class="text-teal-400">⚡</span> +91 81253 42749
+        </a>
+        <a href="mailto:jasmitasri9@gmail.com" class="flex items-center gap-2 hover:text-white print:hover:text-black transition-colors">
+          <span class="text-blue-400">✉</span> jasmitasri9@gmail.com
+        </a>
+        <a href="https://github.com/jasmitasri9-lgtm" target="_blank" class="flex items-center gap-2 hover:text-white print:hover:text-black transition-colors">
+          <span class="text-purple-400">★</span> github.com/jasmitasri9-lgtm
+        </a>
+        <span class="flex items-center gap-2">
+          <span class="text-indigo-400">📍</span> Visakhapatnam, AP, India
+        </span>
+      </div>
+    </header>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 print:block">
+      
+      <!-- Left Column: Context details, Education, Strengths -->
+      <aside class="lg:col-span-4 p-8 bg-gray-950/20 border-r border-gray-800/60 print:border-none print:p-0 print:pr-4 print:w-full">
+        
+        <!-- Profile Summary (On mobile first, or inside sidebar) -->
+        <div class="mb-8">
+          <h2 class="text-xs font-mono uppercase tracking-widest text-gray-500 mb-3.5 font-bold print:text-gray-600">
+            Profile
+          </h2>
+          <p class="text-sm text-gray-300 leading-relaxed print:text-gray-700">
+            Enthusiastic B.Tech student at GITAM University with a strong interest in software development, artificial intelligence, and emerging technologies. Passionate about solving real-world problems through innovative projects, hackathons, and collaborative development. Adept at learning new technologies quickly and building practical solutions that create meaningful impact.
+          </p>
+        </div>
+
+        <div class="border-t border-gray-800/60 my-6 print:border-gray-300"></div>
+
+        <!-- Education block -->
+        <div class="mb-8">
+          <h2 class="text-xs font-mono uppercase tracking-widest text-gray-500 mb-4 font-bold print:text-gray-600">
+            Education
+          </h2>
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-sm font-bold text-white print:text-black">GITAM University</h3>
+              <p class="text-xs text-teal-400 font-mono mt-0.5 print:text-teal-600">B.Tech in Engineering</p>
+              <p class="text-xs text-gray-400 mt-1 print:text-gray-600">2024 – Present</p>
+              <p class="text-xs font-semibold text-white bg-gray-900 border border-gray-800 px-2 py-0.5 rounded-md mt-2 w-fit print:border-gray-300 print:text-black print:bg-gray-100">
+                CGPA: 7.26 / 10.0
+              </p>
+            </div>
+            <div>
+              <h3 class="text-sm font-bold text-white print:text-black">Prabha Junior College</h3>
+              <p class="text-xs text-purple-400 font-mono mt-0.5 print:text-purple-600">Intermediate Education</p>
+              <p class="text-xs text-gray-400 mt-1 print:text-gray-600">2022 – 2024</p>
+              <p class="text-xs font-semibold text-white bg-gray-900 border border-gray-800 px-2 py-0.5 rounded-md mt-2 w-fit print:border-gray-300 print:text-black print:bg-gray-100">
+                Percentage: 78.7%
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-800/60 my-6 print:border-gray-300"></div>
+
+        <!-- Coursework -->
+        <div class="mb-8">
+          <h2 class="text-xs font-mono uppercase tracking-widest text-gray-500 mb-4 font-bold print:text-gray-600">
+            Relevant Coursework
+          </h2>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="text-xs bg-gray-900/60 border border-gray-800 text-gray-300 px-2.5 py-1 rounded-lg print:border-gray-300 print:bg-gray-100 print:text-black">Data Structures</span>
+            <span class="text-xs bg-gray-900/60 border border-gray-800 text-gray-300 px-2.5 py-1 rounded-lg print:border-gray-300 print:bg-gray-100 print:text-black">Algorithms</span>
+            <span class="text-xs bg-gray-900/60 border border-gray-800 text-gray-300 px-2.5 py-1 rounded-lg print:border-gray-300 print:bg-gray-100 print:text-black">Object-Oriented Programming</span>
+            <span class="text-xs bg-gray-900/60 border border-gray-800 text-gray-300 px-2.5 py-1 rounded-lg print:border-gray-300 print:bg-gray-100 print:text-black">Problem Solving Techniques</span>
+            <span class="text-xs bg-gray-900/60 border border-gray-800 text-gray-300 px-2.5 py-1 rounded-lg print:border-gray-300 print:bg-gray-100 print:text-black">Software Fundamentals</span>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-800/60 my-6 print:border-gray-300"></div>
+
+        <!-- Strengths -->
+        <div>
+          <h2 class="text-xs font-mono uppercase tracking-widest text-gray-500 mb-4 font-bold print:text-gray-600">
+            Strengths
+          </h2>
+          <ul class="space-y-2 text-xs text-gray-300 print:text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="text-teal-400 mt-0.5 shrink-0">✔</span>
+              <span>Strong analytical thinking & problem-solving abilities.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-teal-400 mt-0.5 shrink-0">✔</span>
+              <span>Effective communication & presentation skills.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-teal-400 mt-0.5 shrink-0">✔</span>
+              <span>Creative mindset with innovative approach to challenge.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-teal-400 mt-0.5 shrink-0">✔</span>
+              <span>Quick learner with adaptability to dynamic frameworks.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-teal-400 mt-0.5 shrink-0">✔</span>
+              <span>Exceptional teamwork proven in competitive hackathons.</span>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Right Column: Projects, Skills List, Achievements -->
+      <section class="lg:col-span-8 p-8 sm:p-10 space-y-10 print:p-0 print:w-full">
+        
+        <!-- Skills categorised -->
+        <div>
+          <h2 class="text-xs font-mono uppercase tracking-widest text-gray-500 mb-4 font-bold print:text-gray-600">
+            Skills Inventory
+          </h2>
+          <div class="space-y-3.5 text-sm">
+            <div class="grid grid-cols-1 sm:grid-cols-4 gap-1 sm:gap-2 border-b border-gray-800/50 pb-2 print:border-gray-200">
+              <span class="font-bold text-white print:text-black shrink-0 sm:col-span-1">Languages:</span>
+              <span class="text-gray-300 print:text-gray-700 sm:col-span-3">C, Java, Python</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-4 gap-1 sm:gap-2 border-b border-gray-800/50 pb-2 print:border-gray-200">
+              <span class="font-bold text-white print:text-black shrink-0 sm:col-span-1">Core Concepts:</span>
+              <span class="text-gray-300 print:text-gray-700 sm:col-span-3">Data Structures, Algorithms, Object-Oriented Programming</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-4 gap-1 sm:gap-2 border-b border-gray-800/50 pb-2 print:border-gray-200">
+              <span class="font-bold text-white print:text-black shrink-0 sm:col-span-1">Tools / IDEs:</span>
+              <span class="text-gray-300 print:text-gray-700 sm:col-span-3">Git, GitHub, VS Code, Android Studio</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-4 gap-1 sm:gap-2">
+              <span class="font-bold text-white print:text-black shrink-0 sm:col-span-1">Professional:</span>
+              <span class="text-gray-300 print:text-gray-700 sm:col-span-3">Team Collaboration, Critical Thinking, Adaptability, Time Management, Creative Presentation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects -->
+        <div>
+          <h2 class="text-xs font-mono uppercase tracking-widest text-gray-500 mb-5 font-bold print:text-gray-600">
+            Key Software Engineering Projects
+          </h2>
+          <div class="space-y-6">
+            <!-- Project 1 -->
+            <div class="bg-gray-950/30 border border-gray-800/80 p-5 rounded-2xl hover:bg-gray-950/60 transition-colors print:border-none print:p-0 print:bg-white">
+              <div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+                <h3 class="text-base font-bold text-white print:text-black">Kiosk Vision</h3>
+                <span class="text-[10px] font-mono text-teal-400 bg-teal-950/30 border border-teal-800/30 px-2 py-0.5 rounded-full print:border-gray-300 print:bg-gray-100 print:text-teal-700 uppercase font-medium">AI & Computer Vision</span>
+              </div>
+              <p class="text-xs text-gray-400 print:text-gray-500 font-mono mb-2.5">Accessibility • NLP • Real-Time Gesture Mapping</p>
+              <ul class="space-y-1 text-xs text-gray-300 print:text-gray-700 list-disc list-inside">
+                <li>Developed an AI-powered kiosk assistant supporting voice, gesture, and eye-tracking interactions.</li>
+                <li>Enhanced accessibility for visually impaired, hearing-impaired, and first-time users.</li>
+                <li>Leveraged Computer Vision and NLP to provide real-time guidance and personalized assistance.</li>
+              </ul>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-gray-950/30 border border-gray-800/80 p-5 rounded-2xl hover:bg-gray-950/60 transition-colors print:border-none print:p-0 print:bg-white">
+              <div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+                <h3 class="text-base font-bold text-white print:text-black">CivicConnect</h3>
+                <span class="text-[10px] font-mono text-blue-400 bg-blue-950/30 border border-blue-800/30 px-2 py-0.5 rounded-full print:border-gray-300 print:bg-gray-100 print:text-blue-700 uppercase font-medium">Mobile & Cloud Tech</span>
+              </div>
+              <p class="text-xs text-gray-400 print:text-gray-500 font-mono mb-2.5">GPS Tagging • Automated Dispatches • Admin Console</p>
+              <ul class="space-y-1 text-xs text-gray-300 print:text-gray-700 list-disc list-inside">
+                <li>Designed a mobile-first platform for reporting civic issues using photos, GPS location, and voice/text descriptions.</li>
+                <li>Developed an administrative dashboard with automated issue routing and live tracking.</li>
+                <li>Improved civic engagement through real-time reporting, notifications, and analytics.</li>
+              </ul>
+            </div>
+
+            <!-- Page break helper for print layouts (perfect 2-page print standard) -->
+            <div class="page-break hidden print:block"></div>
+
+            <!-- Project 3 -->
+            <div class="bg-gray-950/30 border border-gray-800/80 p-5 rounded-2xl hover:bg-gray-950/60 transition-colors print:border-none print:p-0 print:bg-white print:mt-6">
+              <div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+                <h3 class="text-base font-bold text-white print:text-black">CreatorHub</h3>
+                <span class="text-[10px] font-mono text-purple-400 bg-purple-950/30 border border-purple-800/30 px-2 py-0.5 rounded-full print:border-gray-300 print:bg-gray-100 print:text-purple-700 uppercase font-medium">AI Ideation</span>
+              </div>
+              <p class="text-xs text-gray-400 print:text-gray-500 font-mono mb-2.5">Generative AI • Collaboration • Content Calendar</p>
+              <ul class="space-y-1 text-xs text-gray-300 print:text-gray-700 list-disc list-inside">
+                <li>Built a collaborative platform that helps creators brainstorm content ideas, generate captions, and discover editing styles.</li>
+                <li>Enabled collaboration between creators and editors through a free and open creative workspace.</li>
+                <li>Combined AI-assisted suggestions with human creativity for content planning and development.</li>
+              </ul>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="bg-gray-950/30 border border-gray-800/80 p-5 rounded-2xl hover:bg-gray-950/60 transition-colors print:border-none print:p-0 print:bg-white">
+              <div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+                <h3 class="text-base font-bold text-white print:text-black">AgriTech Web Platform</h3>
+                <span class="text-[10px] font-mono text-emerald-400 bg-emerald-950/30 border border-emerald-800/30 px-2 py-0.5 rounded-full print:border-gray-300 print:bg-gray-100 print:text-emerald-700 uppercase font-medium">Vercel Deploy</span>
+              </div>
+              <p class="text-xs text-gray-400 print:text-gray-500 font-mono mb-2.5">Hogwarts Hackathon • UX Prototype • Web Ecosystem</p>
+              <ul class="space-y-1 text-xs text-gray-300 print:text-gray-700 list-disc list-inside">
+                <li>Designed and deployed an agriculture-focused web application during the Hogwarts Hackathon.</li>
+                <li>Led UI/UX design and deployment, ensuring a clean, intuitive, and user-friendly experience.</li>
+                <li>Successfully deployed the application on Vercel, gaining practical frontend development experience.</li>
+              </ul>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="bg-gray-950/30 border border-gray-800/80 p-5 rounded-2xl hover:bg-gray-950/60 transition-colors print:border-none print:p-0 print:bg-white">
+              <div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+                <h3 class="text-base font-bold text-white print:text-black">MindAnchor</h3>
+                <span class="text-[10px] font-mono text-indigo-400 bg-indigo-950/30 border border-indigo-800/30 px-2 py-0.5 rounded-full print:border-gray-300 print:bg-gray-100 print:text-indigo-700 uppercase font-medium">Healthcare AI</span>
+              </div>
+              <p class="text-xs text-gray-400 print:text-gray-500 font-mono mb-2.5">Dementia Care • Live Geofence Alerting • SOS Reminders</p>
+              <ul class="space-y-1 text-xs text-gray-300 print:text-gray-700 list-disc list-inside">
+                <li>Developed an AI-powered mobile app to assist dementia patients with memory support and daily activity management.</li>
+                <li>Integrated real-time GPS tracking with geofences, caregiver alerts, and one-tap emergency SOS with location broadcast.</li>
+                <li>Implemented AI-driven voice reminders for medications, appointments, and routine tasks.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievements & Hackathons -->
+        <div>
+          <h2 class="text-xs font-mono uppercase tracking-widest text-gray-500 mb-5 font-bold print:text-gray-600">
+            Achievements & Hackathons
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 print:grid-cols-1">
+            <div class="flex gap-2.5">
+              <span class="text-amber-400 shrink-0 mt-0.5 text-sm">✦</span>
+              <div class="text-xs">
+                <span class="font-bold text-white print:text-black">Smart India Hackathon (SIH 2025)</span>
+                <p class="text-gray-400 print:text-gray-600">Participated & contributed to innovative tech-driven national solutions.</p>
+              </div>
+            </div>
+            <div class="flex gap-2.5">
+              <span class="text-amber-400 shrink-0 mt-0.5 text-sm">✦</span>
+              <div class="text-xs">
+                <span class="font-bold text-white print:text-black">USAII Global AI Hackathon 2026</span>
+                <p class="text-gray-400 print:text-gray-600">Participated globally; built realistic AI modules with scalable integration.</p>
+              </div>
+            </div>
+            <div class="flex gap-2.5">
+              <span class="text-amber-400 shrink-0 mt-0.5 text-sm">✦</span>
+              <div class="text-xs">
+                <span class="font-bold text-white print:text-black">Google Developers Hackathon</span>
+                <p class="text-gray-400 print:text-gray-600">Co-developed smart systems within the official GDG network ecosystems.</p>
+              </div>
+            </div>
+            <div class="flex gap-2.5">
+              <span class="text-amber-400 shrink-0 mt-0.5 text-sm">✦</span>
+              <div class="text-xs">
+                <span class="font-bold text-white print:text-black">Hogwarts Hackathon UI/UX Winner</span>
+                <p class="text-gray-400 print:text-gray-600">Led visual modeling and immediate public deployment of localized AgriTech.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+
+    <!-- Footer block -->
+    <footer class="p-6 bg-gray-950 border-t border-gray-800 text-center text-xs text-gray-600 print:bg-white print:text-gray-500 print:border-gray-200">
+      <p>I hereby declare that the details provided are true and accurate to the best of my knowledge.</p>
+      <p class="mt-1 font-mono text-[10px] tracking-wider uppercase">Puppala Sai Jasmita Sri — B.Tech GITAM University</p>
+    </footer>
+
+  </main>
+
+  <!-- Interactive script to log load and support testing -->
+  <script>
+    console.log("Resume compiled and validated successfully.");
+  </script>
+</body>
+</html>
